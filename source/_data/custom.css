@@ -1,0 +1,132 @@
+/* ========================================
+   优化后的 custom.css
+   减少了不必要的 !important
+   ======================================== */
+
+/* 网格背景（不需要修改） */
+body {
+    background-image:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: -1px -1px;
+}
+
+/* ========================================
+   侧边栏样式 - 优化版
+   使用更具体的选择器替代 !important
+   ======================================== */
+
+/* 桌面端侧边栏 */
+body .sidebar {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    padding: 18px;
+    margin: 0;
+}
+
+/* 侧边栏内部容器 */
+.sidebar .sidebar-inner {
+    padding: 0;
+}
+
+/* ========================================
+   目录链接颜色优化
+   ======================================== */
+
+/* 普通目录链接 */
+.post-toc .post-toc-link {
+    color: #555;
+}
+
+/* 当前激活的目录链接 */
+.post-toc .post-toc-link.current {
+    color: #1e40af;
+    border-bottom-color: #1e40af;
+}
+
+/* ========================================
+   侧边栏文字颜色
+   使用更具体的选择器
+   ======================================== */
+
+.sidebar .site-author-name,
+.sidebar .site-description,
+.sidebar .site-state-item,
+.sidebar .links-of-author a,
+.sidebar .links-of-blogroll-item a,
+.sidebar .sidebar-nav .sidebar-nav-active,
+.sidebar .sidebar-nav li a {
+    color: #000;
+}
+
+.sidebar .posts-expand .post-title {
+    color: #000;
+}
+
+/* ========================================
+   移动端侧边栏优化
+   这里保留少量 !important，因为需要覆盖主题的响应式样式
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* 侧边栏容器 */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+        z-index: 1000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        opacity: 0;
+        pointer-events: none;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 侧边栏打开状态 */
+    .sidebar.sidebar-active {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* 侧边栏内部样式 */
+    .sidebar.sidebar-active .sidebar-inner {
+        padding: 20px;
+    }
+
+    /* 遮罩层 */
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .sidebar-overlay.active {
+        display: block;
+    }
+
+    /* 主内容区域布局 */
+    .main-inner {
+        margin-left: 0;
+    }
+
+    .container .main-inner {
+        padding-left: 0;
+    }
+}

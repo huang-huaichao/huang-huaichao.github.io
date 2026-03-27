@@ -1,0 +1,93 @@
+site_name: Galaxy 的个人网站
+site_description: 生活、技术与研究的文档化沉淀
+site_author: Galaxy
+site_url: https://learnergalaxy.github.io
+repo_url: https://github.com/Learnergalaxy/Learnergalaxy.github.io
+repo_name: Learnergalaxy/Learnergalaxy.github.io
+
+nav:
+  - 首页: index.md
+  - 我:
+      - 概览: 我/index.md
+      - 关于我: 我/about.md
+  - 博客:
+      - 概览: 博客/index.md
+  - 开发:
+      - 概览: 开发/index.md
+  - 研究:
+      - 概览: 研究/index.md
+  - 二次元:
+      - 概览: 二次元/index.md
+  - 随笔:
+      - 概览: 随笔/index.md
+  - 转载:
+      - 概览: 转载/index.md
+  - 网站:
+      - 概览: 网站/index.md
+      - 网站构建说明: 网站/build.md
+      - 文章编写帮助: 网站/help.md
+      - 测试文档: 网站/test.md
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到亮色模式
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: zh
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+  - javascripts/katex.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Learnergalaxy
+    - icon: material/email
+      link: mailto:galaxy001@sjtu.edu.cn
