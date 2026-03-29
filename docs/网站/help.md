@@ -42,4 +42,4 @@ $$
 
 - 图片: `![说明](../images/example.png)`
 - 站内链接: `[返回网站栏目](index.md)`
-- 外链: `[GitHub](https://github.com/Learnergalaxy)`
+- 外链: `[GitHub](https://github.com/huang-huaichao)`

@@ -1,6 +1,6 @@
 # 关于我
 
-你好，我是 Galaxy，一名 Python/C++ 开发者。
+你好，我是黄淮超，一名 Python/C++ 开发者。
 
 ## 关注方向
 
@@ -20,4 +20,4 @@
 ## 联系方式
 
 - Email: galaxy001@sjtu.edu.cn
-- GitHub: [@Learnergalaxy](https://github.com/Learnergalaxy)
+- GitHub: [@huang-huaichao](https://github.com/huang-huaichao)

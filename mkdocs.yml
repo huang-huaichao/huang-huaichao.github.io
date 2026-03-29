@@ -1,9 +1,9 @@
-site_name: Galaxy 的个人网站
+site_name: 黄淮超的个人网站
 site_description: 生活、技术与研究的文档化沉淀
-site_author: Galaxy
-site_url: https://learnergalaxy.github.io
-repo_url: https://github.com/Learnergalaxy/Learnergalaxy.github.io
-repo_name: Learnergalaxy/Learnergalaxy.github.io
+site_author: 黄淮超
+site_url: https://huang-huaichao.github.io
+repo_url: https://github.com/huang-huaichao/huang-huaichao.github.io
+repo_name: huang-huaichao/huang-huaichao.github.io
 
 nav:
   - 首页: index.md
@@ -89,6 +89,6 @@ extra_javascript:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Learnergalaxy
+      link: https://github.com/huang-huaichao
     - icon: material/email
       link: mailto:galaxy001@sjtu.edu.cn
