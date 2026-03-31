@@ -12,6 +12,8 @@ nav:
       - 关于我: 我/about.md
   - 博客:
       - 概览: 博客/index.md
+      - Side Screen 配置指南: 博客/side-screen-setup.md
+      - 智谱 GLM Coding Plan + CC Switch 配置指南: 博客/glm-coding-plan-cc-switch-setup.md
   - 开发:
       - 概览: 开发/index.md
   - 研究:
